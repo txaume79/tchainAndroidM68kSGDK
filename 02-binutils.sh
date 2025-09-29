@@ -32,13 +32,13 @@ echo " "
 echo " "
 echo "Downloading sources..."
 cd "$SRC_DIR"
-[ -f "binutils-$BINUTILS_VER.tar.xz" ] || wget -c "$GNU_MIRROR/binutils/binutils-$BINUTILS_VER.tar.xz"
+[ -f "binutils-$BINUTILS_VER.tar.gz" ] || wget -c "$GNU_MIRROR/binutils/binutils-$BINUTILS_VER.tar.gz"
 
 echo " "
 echo " "
 echo " "
 echo "Unpacking..."
-tar -xf "binutils-$BINUTILS_VER.tar.xz"
+tar xvzf "binutils-$BINUTILS_VER.tar.gz"
 
 # ---------- CONFIGURE BINUTILS ----------
 echo " "

@@ -36,13 +36,13 @@ echo " "
 echo " "
 echo "Downloading sources..."
 cd "$SRC_DIR"
-[ -f "gcc-$GCC_VER.tar.xz" ] || wget -c "$GNU_MIRROR/gcc/gcc-$GCC_VER/gcc-$GCC_VER.tar.xz"
+[ -f "gcc-$GCC_VER.tar.gz" ] || wget -c "$GNU_MIRROR/gcc/gcc-$GCC_VER/gcc-$GCC_VER.tar.gz"
 
 echo " "
 echo " "
 echo " "
 echo "Unpacking..."
-tar -xf "gcc-$GCC_VER.tar.xz"
+tar -xf "gcc-$GCC_VER.tar.gz"
 
 # ---------- CONFIGURE GCC STAGE 1. JUST C COMPILER ----------
 echo " "
