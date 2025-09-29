@@ -1,0 +1,15 @@
+echo " "
+echo " "
+echo " "
+echo "SETTING ENV VARS... - watchout if you have different paths"
+set -eu pipefail
+cd SGDK-master
+export GDK=$(pwd) 
+export GDK_WIN=$(pwd) 
+export SGDK_SRC=$(pwd) 
+export PATH=$PATH:/tchainAndroidM68kSGDK/m68k-elf/bin
+if [ -z "${C_INCLUDE_PATH+x}" ]; then
+    export C_INCLUDE_PATH=/$GDK_WIN/res/:/$GDK_WIN/inc/
+else
+    export C_INCLUDE_PATH=$C_INCLUDE_PATH:/$GDK_WIN/res/:/$GDK_WIN/inc/
+fi
