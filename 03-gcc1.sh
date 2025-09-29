@@ -42,7 +42,7 @@ echo " "
 echo " "
 echo " "
 echo "Unpacking..."
-tar -xf "gcc-$GCC_VER.tar.gz"
+tar xvzf "gcc-$GCC_VER.tar.gz"
 
 # ---------- CONFIGURE GCC STAGE 1. JUST C COMPILER ----------
 echo " "
@@ -50,7 +50,6 @@ echo " "
 echo " "
 echo "Configuring GCC $GCC_VER (stage 1, just C compiler)"
 mkdir -p "$BUILD_DIR/gcc1"
-export PATH="$PREFIX/bin:$PATH"
 cd "$BUILD_DIR/gcc1"
 
 # Configure: without headers, just C
