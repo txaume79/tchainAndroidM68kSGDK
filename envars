@@ -1,9 +1,4 @@
-echo " "
-echo " "
-echo " "
-echo "SETTING ENV VARS... - watchout if you have different paths"
-set -eu pipefail
-cd SGDK-master
+cd /root/SGDK-master
 export GDK=$(pwd) 
 export GDK_WIN=$(pwd) 
 export SGDK_SRC=$(pwd) 
