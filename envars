@@ -1,10 +1,12 @@
+# Those paths are just a reference. modify them to match your setup.
 cd /root/SGDK-master
 export GDK=$(pwd) 
 export GDK_WIN=$(pwd) 
 export SGDK_SRC=$(pwd) 
 export PATH=$PATH:/root/tchainAndroidM68kSGDK/m68k-elf/bin
-# TODO need to export almost all bin paths under sgdk/tools 
-# such as sjasm or cp them to sgdk/bin path. up to you.
+export PATH=$PATH:$SGDK_SRC/tools/apj/src/sgdk/aplib:$SGDK_SRC/tools/bintos/src/build
+export PATH=$PATH:$SGDK_SRC/tools/commons/src/sgdk/tool:$SGDK_SRC/tools/sjasm/src
+
 if [ -z "${C_INCLUDE_PATH+x}" ]; then
     export C_INCLUDE_PATH=/$GDK_WIN/res/:/$GDK_WIN/inc/
 else

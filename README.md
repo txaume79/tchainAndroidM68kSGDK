@@ -15,7 +15,7 @@ Tested only with the SGDK **samples** folder.
 * SGDK **2.11**
 * Termux **googleplay.2025.01.18**
 * proot-distro **6.21 8 (uname -r)**
-* ubuntu distro **24.04**
+* ubuntu distro **24.04** - Also tested on Debian **trixie**
 * Andorid 16 - S25 Ultra
 
 ## Setup Steps
@@ -47,6 +47,20 @@ cp envars to SGDK folder and on each new session, . .envars in order to get the 
 ✅ If it works: enjoy!
 
 ## BIG TODO provide an IDE to work with. Keep coming, i will try to use vcode server or maybe an x11 session... still brainless storming
+Note: if you are in a hurry, follow 
+
+Desktop's @LinuxDroidMaster repo: https://github.com/LinuxDroidMaster/Termux-Desktops/tree/main/Documentation/proot  - i do recommend the xfce4 for it's minimal footprint in front other choices.
+
+
+VCode Server guide - random web: https://lifeincloud.com/blog/tutorials/install-vs-code-server-ubuntu-server-24-04/
+
+
+Thank's to both authors to create online tools and guides 
+
+
+Still need to integrate a sgdk template to compile and run. Running the rom will be non trivial as 2 options available:
+- run retroarch inside termux proot-distro 
+- run android native emulator which is almost impossible to access from the linux proot env.
 
 ---
 
